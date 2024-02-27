@@ -3,6 +3,13 @@
   padding: 20px;
 }
 
+.testimonialSection {
+  background: url("../asset_photos/Testimoni-bg.png") center/cover no-repeat;
+}
+
+.newsSection {
+  background: url("../asset_photos/bg-news-2.png") center/cover no-repeat;
+}
 .about-us-1 {
   font-size: 21px;
   text-align: justify;
