@@ -14,7 +14,7 @@
 }
 
 .hero-section {
-  background-image: url(asset/heropictureAbout.jpg);
+  background-image: url(../asset_photos/heropictureAbout.jpg);
   background-size: cover;
   background-position: center;
   color: white;

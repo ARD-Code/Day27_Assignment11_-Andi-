@@ -20,7 +20,7 @@ const Navbar = () => {
               <ul className="navbar-nav">
                 <li className="nav-item">
                   <Link
-                    to="/aboutUs"
+                    to="/aboutus"
                     className="nav-link text-white poppins-font-regular"
                   >
                     About us

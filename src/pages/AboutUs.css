@@ -1,0 +1,36 @@
+.hero-section {
+  background-image: url(../asset_photos/heropictureAbout.jpg);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+  height: 500px;
+}
+
+.poppins-font-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+.poppins-font-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+}
+
+.poppins-font-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+.about-us-1 {
+  font-size: 21px;
+  text-align: justify;
+  line-height: 2;
+}
+
+.about-us-2 {
+  font-size: 21px;
+  text-align: justify;
+  line-height: 2;
+}
