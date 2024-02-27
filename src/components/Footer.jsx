@@ -21,17 +21,17 @@ const Footer = () => {
 
         <ul className="nav justify-content-center justify-content-md-end">
           <li className="nav-item">
-            <Link to="#" className="nav-link text-white">
+            <Link to={"/"} className="nav-link text-white">
               Home
             </Link>
           </li>
           <li className="nav-item">
-            <Link to="#" className="nav-link text-white">
+            <Link to={"/contact"} className="nav-link text-white">
               Contact
             </Link>
           </li>
           <li className="nav-item">
-            <Link to="#" className="nav-link text-white">
+            <Link to={"/aboutus"} className="nav-link text-white">
               About Us
             </Link>
           </li>

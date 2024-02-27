@@ -264,13 +264,13 @@ const AboutUs = () => {
                 are not just confections but portals to enchantment.
               </p>
               <p className="mb-md-0 poppins-font-bold">
-                <a
+                <Link
+                  to={"/contact"}
                   className="btn rounded-4 px-4"
                   style={{ backgroundColor: "#3f2305", color: "white" }}
-                  href="contact.html"
                 >
                   Contact Us
-                </a>
+                </Link>
               </p>
             </div>
           </div>
