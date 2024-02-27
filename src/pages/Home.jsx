@@ -10,6 +10,11 @@ import FOOD1 from "../asset_photos/FOOD-1.png";
 import FOOD2 from "../asset_photos/eclair new.png";
 import FOOD3 from "../asset_photos/palmier.png";
 import aboutusbg from "../asset_photos/bg-about us.png";
+import bgnews2 from "../asset_photos/bg-news-2.png";
+import news1 from "../asset_photos/news-1.jpg";
+import news2 from "../asset_photos/a-photo-about-news-restaurant-bakery.jpg";
+import news3 from "../asset_photos/news-2.jpg";
+import news4 from "../asset_photos/news-3.jpg";
 
 const Home = () => {
   useEffect(() => {
@@ -204,6 +209,154 @@ const Home = () => {
                   <i className="bi bi-arrow-right-short"></i>
                 </Link>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* About Us*/}
+      <div
+        data-aos="fade-up"
+        data-aos-duration="2000"
+        className="container-fluid mt-5"
+        style={{
+          background: { bgnews2 },
+          paddingBottom: "100px",
+          border: "none",
+        }}
+      >
+        <div className="container" style={{ paddingTop: "180px" }}>
+          <div className="row">
+            <h2 className="news-h2 poppins-font-bold col-md-6">News</h2>
+          </div>
+          <div className="row">
+            {/* News Item 1 */}
+            <div className="col-md-3">
+              <div className="card" style={{ width: "18rem" }}>
+                <img src={news1} className="card-img-top" />
+                <div className="card-body">
+                  <h5 className="card-title">
+                    Belly's Bakery Wins Prestigious Award for Best Artisan Bread
+                    2024!
+                  </h5>
+                  <p className="card-text">
+                    Belly's Bakery is proud to announce that our artisan bread
+                    has been recognized as the best in the industry, winning a
+                    prestigious award for its outstanding quality and taste.
+                  </p>
+                  <a
+                    href="#"
+                    data-toggle="modal"
+                    data-target="#exampleModal"
+                    className="button-news btn poppins-font-light"
+                  >
+                    Read More
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* News Item 2 */}
+            <div className="col-md-3">
+              <div className="card" style={{ width: "18rem" }}>
+                <img src={news2} className="card-img-top" alt="News 2" />
+                <div className="card-body">
+                  <h5 className="card-title">
+                    Grand Opening of Belly's New Location – A Sweet Treat
+                    Extravaganza!
+                  </h5>
+                  <p className="card-text">
+                    Join us in celebrating the grand opening of Belly's Bakery's
+                    new location! Indulge in a day full of sweet treats,
+                    giveaways, and special promotions as we expand our
+                    community.
+                  </p>
+                  <a
+                    href="#"
+                    data-toggle="modal"
+                    data-target="#exampleModal"
+                    className="button-news btn poppins-font-light"
+                  >
+                    Read More
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* News Item 3 */}
+            <div className="col-md-3">
+              <div className="card" style={{ width: "18rem" }}>
+                <img src={news3} className="card-img-top" alt="News 3" />
+                <div className="card-body">
+                  <h5 className="card-title">
+                    Belly's Launches Innovative Gluten-Free and Vegan Pastry
+                    Line!
+                  </h5>
+                  <p className="card-text">
+                    Catering to diverse dietary , Belly's Bakery introduces a
+                    delectable line of gluten-free and vegan pastries. Now
+                    everyone can enjoy our mouthwatering treats without
+                    compromising on taste or quality.
+                  </p>
+                  <a
+                    href="#"
+                    data-toggle="modal"
+                    data-target="#exampleModal"
+                    className="button-news btn poppins-font-light"
+                  >
+                    Read More
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* News Item 4 */}
+            <div className="col-md-3">
+              <div className="card" style={{ width: "18rem" }}>
+                <img src={news4} className="card-img-top" alt="News 4" />
+                <div className="card-body">
+                  <h5 className="card-title">
+                    Belly's Bakery Supports Local Community with Charity Bake
+                    Sale
+                  </h5>
+                  <p className="card-text">
+                    Giving back is at the heart of Belly's Bakery. Join us for a
+                    charity bake sale event where a portion will go towards
+                    supporting local community initiatives. Indulge in delicious
+                    pastries.
+                  </p>
+                  <a
+                    href="#"
+                    data-toggle="modal"
+                    data-target="#exampleModal"
+                    className="button-news btn poppins-font-light"
+                  >
+                    Read More
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="row mt-5 text-center">
+            <div className="col-md-12">
+              <button
+                type="button"
+                className="btn rounded-pill poppins-font-light"
+                data-toggle="modal"
+                data-target="#exampleModal"
+                style={{
+                  backgroundColor: "#3f2305",
+                  color: "white",
+                  padding: "10px 30px",
+                  fontSize: "18px",
+                  border: "none",
+                  borderRadius: "25px",
+                  cursor: "pointer",
+                  transition: "background-color 0.3s ease",
+                }}
+              >
+                Click For More
+                <i className="bi bi-arrow-right-short"></i>
+              </button>
             </div>
           </div>
         </div>
