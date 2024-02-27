@@ -1,0 +1,24 @@
+.poppins-font-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+.poppins-font-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+}
+
+.poppins-font-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+.hero-section {
+  background-image: url(asset/heropictureAbout.jpg);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+  height: 500px;
+}
