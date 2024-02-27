@@ -195,7 +195,7 @@ const Home = () => {
               </p>
               <div className="col">
                 <Link
-                  to="/aboutUs"
+                  to="/aboutus"
                   className="btn rounded-pill poppins-font-light"
                   style={{
                     backgroundColor: "#3f2305",
