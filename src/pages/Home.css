@@ -1,5 +1,5 @@
 .backgroundCarousel {
-  background: url("asset/bg-food2.png") center/cover no-repeat;
+  background: url("../asset_photos/bg-food2.png") center/cover no-repeat;
   padding: 20px;
 }
 
@@ -73,9 +73,4 @@ h2 {
   .about-us-2 {
     font-size: 18px;
   }
-}
-
-.aboutUs {
-  background: url(asset/bg-besar-about-us.jpg);
-  background-size: cover;
 }

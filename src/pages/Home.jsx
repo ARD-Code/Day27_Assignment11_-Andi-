@@ -1,10 +1,15 @@
-import React, { useEffect } from "react";
-import { Navbar, Nav, Button } from "react-bootstrap";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
+import { Link, Navigate, useNavigate } from "react-router-dom";
+import AOS from "aos";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "aos/dist/aos.css";
+import { useEffect } from "react";
 import "./Home.css";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import FOOD1 from "../asset_photos/FOOD-1.png";
+import FOOD2 from "../asset_photos/eclair new.png";
+import FOOD3 from "../asset_photos/palmier.png";
+import aboutusbg from "../asset_photos/bg-about us.png";
 
 const Home = () => {
   useEffect(() => {
@@ -25,65 +30,9 @@ const Home = () => {
     cursor: "pointer",
     transition: "background-color 0.3s ease",
   };
-
   return (
     <div>
-      <header className="container">
-        <div className="container-fluid">
-          <Navbar expand="lg" fixed="top">
-            <div
-              className="container rounded-4 shadow-lg px-4 py-md-2"
-              style={{ backgroundColor: "#3f2305" }}
-            >
-              <Navbar.Brand className="order-1" href="index.html">
-                <p className="mb-0 text-white poppins-font-bold">Belly's</p>
-              </Navbar.Brand>
-              <div className="ml-auto order-3">
-                <Navbar.Toggle
-                  aria-controls="navbarNav"
-                  style={{ backgroundColor: "white" }}
-                />
-              </div>
-              <Navbar.Collapse id="navbarNav" className="order-2">
-                <Nav className="navbar-nav">
-                  <Nav.Link
-                    className="text-white poppins-font-regular"
-                    href="aboutUs.html"
-                  >
-                    About us
-                  </Nav.Link>
-                  <Nav.Link
-                    className="text-white poppins-font-regular"
-                    href="menu.html"
-                  >
-                    Menu
-                  </Nav.Link>
-                  <Nav.Link
-                    className="text-white poppins-font-regular"
-                    href="contact.html"
-                  >
-                    Contact
-                  </Nav.Link>
-                </Nav>
-              </Navbar.Collapse>
-              <div className="order-4 ml-auto">
-                <Button
-                  variant="outline-white"
-                  className="rounded-pill btn-sm"
-                  type="submit"
-                >
-                  <a href="cart.html">
-                    <i
-                      className="bi bi-basket2-fill px-2"
-                      style={{ color: "#3f2305" }}
-                    ></i>
-                  </a>
-                </Button>
-              </div>
-            </div>
-          </Navbar>
-        </div>
-      </header>
+      <Navbar />
       <div className="container mt-1 pt-5">
         <div
           className="backgroundCarousel jumbotron row"
@@ -129,17 +78,17 @@ const Home = () => {
               className="row"
               style={{ marginTop: "100px", paddingLeft: "180px" }}
             >
-              <a
+              <Link
                 className="btn rounded-4 poppins-font-bold"
                 style={{
                   backgroundColor: "#3f2305",
                   color: "white",
                   width: "200px",
                 }}
-                href="menu.html"
+                to="/menu"
               >
                 Order Now
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -157,25 +106,13 @@ const Home = () => {
             >
               <div className="carousel-inner">
                 <div className="carousel-item active">
-                  <img
-                    src="asset/FOOD-1.png"
-                    className="d-block w-100"
-                    alt="Image 1"
-                  />
+                  <img src={FOOD1} className="d-block w-100" alt="Image 1" />
                 </div>
                 <div className="carousel-item">
-                  <img
-                    src="asset/eclair new.png"
-                    className="d-block w-100"
-                    alt="Image 2"
-                  />
+                  <img src={FOOD2} className="d-block w-100" alt="Image 2" />
                 </div>
                 <div className="carousel-item">
-                  <img
-                    src="asset/palmier.png"
-                    className="d-block w-100"
-                    alt="Image 3"
-                  />
+                  <img src={FOOD3} className="d-block w-100" alt="Image 3" />
                 </div>
               </div>
               <button
@@ -206,7 +143,14 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="container-fluid mt-5 aboutUs">
+      {/* jumbtron */}
+      <div
+        className="container-fluid mt-5"
+        style={{
+          background: "url(asset/bg-besar-about-us.jpg)",
+          backgroundSize: "cover",
+        }}
+      >
         <div className="container" style={{ paddingTop: "70px" }}>
           <div data-aos="fade-up" data-aos-duration="3000" className="row">
             <h2 className="poppins-font-bold">About us</h2>
@@ -215,8 +159,8 @@ const Home = () => {
             <div className="col-md-6">
               <img
                 className="rounded-start-5"
-                src="./asset/bg-about us.png"
-                alt="About Us"
+                src={aboutusbg}
+                alt="About Us Background"
               />
             </div>
             <div
@@ -242,59 +186,29 @@ const Home = () => {
                 our commitment to excellence is evident in every detail.
               </p>
               <div className="col">
-                <a
-                  type="button"
+                <Link
+                  to="/aboutUs"
                   className="btn rounded-pill poppins-font-light"
-                  href="aboutUs.html"
-                  style={buttonStyle}
+                  style={{
+                    backgroundColor: "#3f2305",
+                    color: "white",
+                    padding: "10px 30px",
+                    fontSize: "18px",
+                    border: "none",
+                    borderRadius: "25px",
+                    cursor: "pointer",
+                    transition: "background-color 0.3s ease",
+                  }}
                 >
                   Click For More
                   <i className="bi bi-arrow-right-short"></i>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div className="container-fluid" style={{ backgroundColor: "#aa9176" }}>
-        <footer className="d-flex flex-column flex-md-row justify-content-between align-items-center py-3 border-top">
-          <div className="text-center text-md-left mb-3 mb-md-0">
-            <p className="mb-0 text-white">© 2024 Belly's Corner</p>
-          </div>
-
-          <a href="/" className="text-center mb-3 mb-md-0 text-decoration-none">
-            <p
-              className="mb-0 text-white poppins-font-bold"
-              style={{ fontSize: "x-large" }}
-            >
-              Belly's
-            </p>
-          </a>
-
-          <ul className="nav justify-content-center justify-content-md-end">
-            <li className="nav-item">
-              <a href="#" className="nav-link text-white">
-                Home
-              </a>
-            </li>
-            <li className="nav-item">
-              <a href="#" className="nav-link text-white">
-                Menu
-              </a>
-            </li>
-            <li className="nav-item">
-              <a href="#" className="nav-link text-white">
-                Contact
-              </a>
-            </li>
-            <li className="nav-item">
-              <a href="#" className="nav-link text-white">
-                About Us
-              </a>
-            </li>
-          </ul>
-        </footer>
-      </div>
+      <Footer />
     </div>
   );
 };

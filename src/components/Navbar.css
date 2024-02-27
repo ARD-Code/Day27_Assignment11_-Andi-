@@ -1,0 +1,76 @@
+.backgroundCarousel {
+  background: url("asset/bg-food2.png") center/cover no-repeat;
+  padding: 20px;
+}
+
+.about-us-1 {
+  font-size: 21px;
+  text-align: justify;
+  line-height: 2;
+}
+
+.about-us-2 {
+  font-size: 21px;
+  text-align: justify;
+  line-height: 2;
+}
+
+.button-news {
+  background-color: #3f2305;
+  color: #ffffff;
+}
+
+h2 {
+  color: #3f2305;
+  font-size: 80px;
+}
+
+.news-h2 {
+  color: #ffffff;
+  font-size: 80px;
+}
+
+.testimoni-h2 {
+  color: #3f2305;
+  font-size: 100px;
+}
+
+.poppins-font-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+.poppins-font-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+}
+
+.poppins-font-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+.testimonial-card .card-up {
+  height: 120px;
+  overflow: hidden;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+}
+.testimonial-card .avatar {
+  width: 110px;
+  margin-top: -60px;
+  overflow: hidden;
+  border: 3px solid #fff;
+  border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+  .backgroundCarousel {
+    padding: 10px;
+  }
+
+  .about-us-1,
+  .about-us-2 {
+    font-size: 18px;
+  }
+}

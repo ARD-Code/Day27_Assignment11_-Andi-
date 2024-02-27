@@ -1,13 +1,10 @@
-// App.jsx
-import React from "react";
-import Home from "./components/Home";
+import { BrowserRouter, Route, Routes, useRoutes } from "react-router-dom";
+import routes from "./routes/routes";
 
-function App() {
-  return (
-    <div className="App">
-      <Home />
-    </div>
-  );
-}
+const App = () => {
+  const element = useRoutes(routes);
+
+  return element;
+};
 
 export default App;
